@@ -8,7 +8,7 @@
 ## [lab_1](https://github.com/Dangovsky/OS/blob/master/lab_1.sh)
 Как запускать:
 ```shell
-./lab_2.sh
+./lab_1.sh
 ```
 ## [lab_2](https://github.com/Dangovsky/OS/blob/master/lab_2.c)
 Как компилировать: 
