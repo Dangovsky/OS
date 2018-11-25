@@ -25,7 +25,6 @@ sudo apt-get install gcc-multilib
 gcc -m32 -nostartfiles lab_3.s -o lab_3
 ```
 ## [lab_4](https://github.com/Dangovsky/OS/blob/master/lab_4.c)
-Перед комипляцией: 
 Как компилировать: 
 ```shell
 gcc lab_4.c -pthread -o lab_4
