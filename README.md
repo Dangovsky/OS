@@ -68,3 +68,23 @@ vim *
 ```shell
 fusermount -u ./fuse
 ```
+## [lab_6](https://github.com/Dangovsky/OS/blob/master/lab_6.c)
+Перед комипляцией: 
+```shell
+sudo apt-get update && sudo apt-get install collectd
+```
+В файле `/etc/collectd/collectd.conf`:
+* раскомментировать `BaseDir`, `Plugin`, `LoadPlugin csv`, `LoadPlugin unixsock`, `LoadPlugin network`,
+* раскомментировать и заменить `localhost` на `this-host`.
+* раскомментировать тег `<Plugin csv>` и `<Plugin unixsock>` со всем содержимым.  
+* раскомментировать тег `<Plugin network>` и его внутренний тег `<Server >`, адрес заменить на (0.0.0.0)
+
+Как компилировать: 
+```shell
+gcc -o lab_6 lab_6.c
+```
+Как запускать:
+```shell
+./lab_6 тест 1179574444:123:456
+```
+После запуска перейти в `/var/lib/collectd/csv/this-host/stdout` и найти там фаил с названием `load-тест-yyyy-mm-dd` где `yyyy-mm-dd` - сегодняшняя дата. В нем будет наша запись.
