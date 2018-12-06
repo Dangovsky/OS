@@ -1,12 +1,12 @@
 # OS
 Для корректного запуска 1, 2 и 3 лабораторной в одной дириктории с запускаемым файлом должен лежать [log.txt](https://github.com/Dangovsky/OS/blob/master/log.txt).
 
-## [lab_1](https://github.com/Dangovsky/OS/blob/master/lab_1.sh)
+## [lab_1](lab_1.sh)
 Как запускать:
 ```shell
 ./lab_1.sh
 ```
-## [lab_2](https://github.com/Dangovsky/OS/blob/master/lab_2.c)
+## [lab_2](lab_2.c)
 Как компилировать: 
 ```shell
 gcc lab_2.c -o lab_2
@@ -15,7 +15,7 @@ gcc lab_2.c -o lab_2
 ```shell
 ./lab_2
 ```
-## [lab_3](https://github.com/Dangovsky/OS/blob/master/lab_3.s)
+## [lab_3](lab_3.s)
 Перед комипляцией: 
 ```shell
 sudo apt-get install gcc-multilib
@@ -28,7 +28,7 @@ gcc -m32 -nostartfiles lab_3.s -o lab_3
 ```shell
 ./lab_3
 ```
-## [lab_4](https://github.com/Dangovsky/OS/blob/master/lab_4.c)
+## [lab_4](lab_4.c)
 Как компилировать: 
 ```shell
 gcc lab_4.c -pthread -o lab_4
@@ -43,7 +43,7 @@ gcc lab_4.c -pthread -o lab_4
 ```
 Вывод не всегда корректен потому, что потоки перехватывают управление друг у друга и мешают красивому выводу
 
-## [lab_5](https://github.com/Dangovsky/OS/blob/master/lab_5.c)
+## [lab_5](lab_5.c)
 Перед комипляцией: 
 ```shell
 sudo apt-get update && sudo apt-get install libfuse-dev
@@ -68,7 +68,7 @@ vim *
 ```shell
 fusermount -u ./fuse
 ```
-## [lab_6](https://github.com/Dangovsky/OS/blob/master/lab_6.c)
+## [lab_6](lab_6.c)
 Перед комипляцией: 
 ```shell
 sudo apt-get update && sudo apt-get install collectd
